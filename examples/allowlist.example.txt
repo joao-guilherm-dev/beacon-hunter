@@ -1,0 +1,4 @@
+# Allowlist de exemplo — um item por linha
+port 123              # NTP
+dst 192.0.2.80/32     # servidor de update corporativo conhecido
+src 10.0.0.250        # scanner de vulnerabilidades interno

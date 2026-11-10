@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beacon Hunter — Relatório</title>
+<style>
+:root{--bg:#0d1117;--fg:#c9d1d9;--card:#161b22;--bd:#30363d;--mut:#8b949e}
+@media (prefers-color-scheme: light){:root{--bg:#fff;--fg:#1f2328;--card:#f6f8fa;--bd:#d0d7de;--mut:#656d76}}
+body{font-family:ui-monospace,Consolas,monospace;background:var(--bg);color:var(--fg);margin:0;padding:24px}
+h1{margin:0 0 4px} .mut{color:var(--mut);font-size:13px;margin-bottom:20px}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--card);border:1px solid var(--bd)}
+th,td{padding:8px 10px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top;font-size:13px}
+th{color:var(--mut)} ul{margin:0;padding-left:16px}
+.sev{color:#fff;padding:2px 8px;border-radius:4px;font-size:12px}
+.bar{width:90px;height:6px;background:var(--bd);border-radius:3px;margin-bottom:4px}
+.bar div{height:100%;border-radius:3px}
+</style></head><body>
+<h1>🔎 Beacon Hunter</h1>
+<div class="mut">Gerado em 09/11/2026 17:45 · fonte: examples/sample_traffic.csv · 3 achado(s)</div>
+<div class="wrap"><table>
+<tr><th>Sev.</th><th>Score</th><th>Origem</th><th>Destino</th><th>Conns</th><th>Intervalo</th><th>CV</th><th>Motivos</th></tr>
+
+<tr>
+ <td><span class="sev" style="background:#e5484d">ALTO</span></td>
+ <td><div class="bar"><div style="width:97.2%;background:#e5484d"></div></div>97.2</td>
+ <td>10.0.0.22</td><td>198.51.100.23:8080/tcp</td>
+ <td>144</td><td>5min</td><td>0.06</td>
+ <td><ul><li>intervalos muito regulares (~300s, CV=0.06)</li><li>100% dos intervalos próximos da mediana (jitter ≤ 25%)</li><li>payloads de tamanho consistente (padrão de check-in)</li><li>atividade contínua durante toda a captura</li><li>alta persistência (144 conexões em 11.9h)</li></ul></td>
+</tr>
+<tr>
+ <td><span class="sev" style="background:#e5484d">ALTO</span></td>
+ <td><div class="bar"><div style="width:95.2%;background:#e5484d"></div></div>95.2</td>
+ <td>10.0.0.15</td><td>203.0.113.50:443/tcp</td>
+ <td>715</td><td>1min</td><td>0.11</td>
+ <td><ul><li>intervalos muito regulares (~61s, CV=0.11)</li><li>100% dos intervalos próximos da mediana (jitter ≤ 25%)</li><li>payloads de tamanho consistente (padrão de check-in)</li><li>atividade contínua durante toda a captura</li><li>alta persistência (715 conexões em 12.0h)</li></ul></td>
+</tr>
+<tr>
+ <td><span class="sev" style="background:#f5a524">MÉDIO</span></td>
+ <td><div class="bar"><div style="width:78.2%;background:#f5a524"></div></div>78.2</td>
+ <td>10.0.0.31</td><td>192.0.2.80:443/tcp</td>
+ <td>13</td><td>60min</td><td>0.01</td>
+ <td><ul><li>intervalos muito regulares (~3590s, CV=0.01)</li><li>100% dos intervalos próximos da mediana (jitter ≤ 25%)</li></ul></td>
+</tr>
+</table></div>
+</body></html>

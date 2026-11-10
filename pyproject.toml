@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beacon-hunter"
+version = "1.0.0"
+description = "Detecção de beaconing (C2) em logs de conexão de rede"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["cybersecurity", "blue-team", "threat-hunting", "c2", "beaconing", "dfir"]
+
+[project.scripts]
+beacon-hunter = "beacon_hunter.cli:main"
+
+[tool.setuptools]
+packages = ["beacon_hunter"]

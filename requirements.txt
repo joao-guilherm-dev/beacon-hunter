@@ -1,0 +1,3 @@
+# Runtime: nenhuma dependência externa (apenas biblioteca padrão)
+# Desenvolvimento:
+pytest>=7.0

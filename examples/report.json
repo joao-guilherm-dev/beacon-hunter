@@ -1,0 +1,71 @@
+[
+  {
+    "src": "10.0.0.22",
+    "dst": "198.51.100.23",
+    "dport": 8080,
+    "proto": "tcp",
+    "connections": 144,
+    "duration_s": 42954.1,
+    "mean_interval_s": 300.38,
+    "median_interval_s": 300.4,
+    "cv": 0.056,
+    "robust_cv": 0.064,
+    "dominant_ratio": 1.0,
+    "size_cv": 0.058,
+    "coverage": 1.0,
+    "score": 97.2,
+    "severity": "ALTO",
+    "reasons": [
+      "intervalos muito regulares (~300s, CV=0.06)",
+      "100% dos intervalos próximos da mediana (jitter ≤ 25%)",
+      "payloads de tamanho consistente (padrão de check-in)",
+      "atividade contínua durante toda a captura",
+      "alta persistência (144 conexões em 11.9h)"
+    ]
+  },
+  {
+    "src": "10.0.0.15",
+    "dst": "203.0.113.50",
+    "dport": 443,
+    "proto": "tcp",
+    "connections": 715,
+    "duration_s": 43192.0,
+    "mean_interval_s": 60.49,
+    "median_interval_s": 60.55,
+    "cv": 0.113,
+    "robust_cv": 0.141,
+    "dominant_ratio": 1.0,
+    "size_cv": 0.059,
+    "coverage": 1.0,
+    "score": 95.2,
+    "severity": "ALTO",
+    "reasons": [
+      "intervalos muito regulares (~61s, CV=0.11)",
+      "100% dos intervalos próximos da mediana (jitter ≤ 25%)",
+      "payloads de tamanho consistente (padrão de check-in)",
+      "atividade contínua durante toda a captura",
+      "alta persistência (715 conexões em 12.0h)"
+    ]
+  },
+  {
+    "src": "10.0.0.31",
+    "dst": "192.0.2.80",
+    "dport": 443,
+    "proto": "tcp",
+    "connections": 13,
+    "duration_s": 43120.9,
+    "mean_interval_s": 3593.41,
+    "median_interval_s": 3590.22,
+    "cv": 0.011,
+    "robust_cv": 0.013,
+    "dominant_ratio": 1.0,
+    "size_cv": 0.452,
+    "coverage": 0.65,
+    "score": 78.2,
+    "severity": "MÉDIO",
+    "reasons": [
+      "intervalos muito regulares (~3590s, CV=0.01)",
+      "100% dos intervalos próximos da mediana (jitter ≤ 25%)"
+    ]
+  }
+]
