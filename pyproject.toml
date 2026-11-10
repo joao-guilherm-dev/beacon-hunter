@@ -7,7 +7,7 @@ name = "beacon-hunter"
 version = "1.0.0"
 description = "Detecção de beaconing (C2) em logs de conexão de rede"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 keywords = ["cybersecurity", "blue-team", "threat-hunting", "c2", "beaconing", "dfir"]
 

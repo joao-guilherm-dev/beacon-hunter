@@ -1,7 +1,7 @@
 # 🔎 Beacon Hunter — Detecção de Beaconing (C2)
 
 [![tests](https://github.com/joao-guilherm-dev/beacon-hunter/actions/workflows/tests.yml/badge.svg)](https://github.com/joao-guilherm-dev/beacon-hunter/actions)
-![python](https://img.shields.io/badge/python-3.9%2B-blue)
+![python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![deps](https://img.shields.io/badge/dependências-zero-brightgreen)
 ![license](https://img.shields.io/badge/license-MIT-lightgrey)
 
@@ -41,7 +41,7 @@ Tratamentos para reduzir ruído: fusão de rajadas (conexões < 1s viram um even
 
 ## 🚀 Instalação e uso
 
-Sem dependências externas (somente biblioteca padrão). Python 3.9+.
+Sem dependências externas (somente biblioteca padrão). Python 3.10+.
 
 ```bash
 git clone https://github.com/joao-guilherm-dev/beacon-hunter.git
