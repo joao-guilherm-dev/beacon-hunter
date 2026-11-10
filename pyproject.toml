@@ -16,3 +16,7 @@ beacon-hunter = "beacon_hunter.cli:main"
 
 [tool.setuptools]
 packages = ["beacon_hunter"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
